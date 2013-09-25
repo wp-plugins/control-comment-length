@@ -55,8 +55,8 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 1. Screenshot 1 of the backend interface
 2. Screenshot 2 of the backend interface
-3. Screenshot 3 of the backend interface
-4. Screenshot 4 of the backend interface
+3. Screenshot 3 of the frontend message
+4. Screenshot 4 of the frontend message
 
 
 == Changelog ==
