@@ -25,7 +25,7 @@ Hilfe und Support erhalten Sie auf http://greenitsolutions.at/control-comment-le
 
 Viel Erfolg wünscht Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
----------------------------------------------------------------------------------------------------------
+#############################################################################
 
 The comment entered by the user must have a specific number of characters which has to be predetermined by you.
 If the comment is too long or too short a message including the current and the required length of the comment will be sent.
