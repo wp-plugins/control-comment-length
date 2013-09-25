@@ -8,8 +8,7 @@ Stable tag: 3.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Das Plugin sorgt dafür dass alle Kommentare eine gewisse Zeichenlänge haben müssen.
-The plugin ensures that all comments must have a certain length.
+Das Plugin sorgt dafür dass alle Kommentare eine gewisse Länge haben müssen.The plugin ensures that all comments must have a certain length.
 
 == Description ==
 
