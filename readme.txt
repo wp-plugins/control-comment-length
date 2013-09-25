@@ -21,6 +21,10 @@ Der Hinweis auf einen zu kurzen oder zu langen Kommentar kann ebenfalls angepass
 * Die Zeichenlänge kann für Adminkommentare gesteuert werden	
 * Die Zeichenlänge für alle User die Kommentare moderieren können kann gesteuert werden
 
+Hilfe und Support erhalten Sie auf http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
+
+Viel Erfolg wünscht Green IT Solutions Andreas Grundner http://greenitsolutions.at
+
 ---------------------------------------------------------------------------------------------------------
 
 The comment entered by the user must have a specific number of characters which has to be predetermined by you.
@@ -31,6 +35,8 @@ You can also adjust the reference of a comment which is too long or too short.
  
 * The character length can be controlled for comments written by admins.
 * The character length for all users who are able to moderate the comments can be controlled.
+
+Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 == Installation ==
 
