@@ -8,7 +8,7 @@ Stable tag: 3.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Das Plugin sorgt dafür dass alle Kommentare eine gewisse Länge haben müssen.The plugin ensures that all comments must have a certain length.
+Das Plugin sorgt dafür dass alle Kommentare eine gewisse Länge haben müssen. The plugin ensures that all comments must have a certain length.
 
 == Description ==
 
@@ -21,7 +21,7 @@ Der Hinweis auf einen zu kurzen oder zu langen Kommentar kann ebenfalls angepass
 * Die Zeichenlänge kann für Adminkommentare gesteuert werden	
 * Die Zeichenlänge für alle User die Kommentare moderieren können kann gesteuert werden
 
-
+---------------------------------------------------------------------------------------------------------
 
 The comment entered by the user must have a specific number of characters which has to be predetermined by you.
 If the comment is too long or too short a message including the current and the required length of the comment will be sent.
@@ -34,7 +34,7 @@ You can also adjust the reference of a comment which is too long or too short.
 
 == Installation ==
 
-1. Upload `control-comments-length` to the `/wp-content/plugins/` directory
+1. Upload `control-comment-length` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure in Backend
 
