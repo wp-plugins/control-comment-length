@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: a.grundner@greenitsolutions.at
 Donate link: http://greenitsolutions.at
-Tags: comments, spam
+Tags: comments, spam, plugin, admin, posts, Post
 Requires at least: 3.0.0
 Tested up to: 3.6.1
 Stable tag: 3.6.1
