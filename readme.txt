@@ -66,3 +66,6 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 = 1.1 =
 * Updated and tested for Wordpress 3.7.1
+
+= 1.1.1 =
+* Little nightly bugfix
