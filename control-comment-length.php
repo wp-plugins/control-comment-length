@@ -355,6 +355,20 @@ class ControlCommentLength {
 		
 		if($this->options['id_like'] == "on") {
 		
+			$sStrings = array (	
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/" title="günstige, kostenlose, gratis One Page Website">Wir erstellen Ihnen ein kostengünstiges Angebot für eine One Page Website</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/leistungen" title="Single Page Website">günstige Single Page Websites für Unternehmen und Private. Jetzt Angebot für Ihre neue Homepage erstellen lassen</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/leistungen" title="Landingpage">günstige Landingpages in Salzburg erstellen lassen. Landingpages von der Fullservice Marketing Agentur</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/wordpress-suchmaschinenoptimierung-seo/" title="gratis SEO vom Profi">Zu jeder Homepage erhalten Sie kostenlos SEO und Suchmaschinenoptimierung dazu</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/domain-hosting-webhosting-free-hosting/" title="Hosting, Werbeagentur">Österreichisches Hosting direkt aus Österreich vom Ihrer Werbeagentur</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/unix-linux-terminal-befehle/" title="Unix, Linux, Mac OSX Terminal Befehle">Unix Befehle zum Nachlesen immer parat. Diese Unix Befehle funktionieren auch unter Debian Linux Mint und Mac OSX</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Control Comment Length Wordpress Plugin">Das Wordpress Plugin ermöglicht das Steuern der minimalen und maximalen Länge der Kommentare direkt im Wordpress Backend.</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Wordpress Comment Plugin">Its a perfekt WP Plugin to enshure that comments must have a certain length. Thank god vor greenitsolutions!</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Schutz vor Wordpress Kommentarspam">Einer der einfachsten Wege um Spam auf Wordpress Seiten zu verhindern ist das Plugin Control Comment Length</a></h2>',
+								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/android-eclipse-entwicklungsumgebung-einrichten/" title="Android Entwicklungsumgebung einrichten">das Einrichten einer Eclipse Android Entwicklungsumgebung war noch nie so leicht</a></h2>'
+			);
+						
+			echo $sStrings[array_rand($sStrings)];
 		}
 	}
 	
