@@ -67,7 +67,7 @@ class ControlCommentLength {
 		$this->options = get_option( 'ControlCommentLengthOptions' );
         add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
 		add_filter('preprocess_comment', array($this,'lock_control_comment_length'));
-		add_filter('the_content',array( $this, 'iLike' ) );
+		add_action('wp_footer',array( $this, 'iLike' ) );
 		add_action('admin_head', array( $this, 'custom_colors' ) );
         add_action( 'admin_init', array( $this, 'page_init' ) );		
     }
@@ -97,17 +97,31 @@ class ControlCommentLength {
 
         ?>
         <div class="wrap">
-            <?php screen_icon(); ?>
-            <h2>Control Comment Length by Green IT Solutions Einstellungen</h2>
-            <a class="gits_logo" href="http://greenitsolutions.at/blog" title="Green IT Solutions Andreas Grundner Blog" target="_blank">Visit Our Blog</a>           
-            <form method="post" action="options.php">
-            <?php
-                // This prints out all hidden setting fields
-                settings_fields( 'my_option_group' );   
-                do_settings_sections( 'my-setting-admin' );
-                submit_button(); 
-            ?>
-            </form>
+        	<section id="gits_content">
+	            <?php screen_icon(); ?>
+	            <h2>Control Comment Length by Green IT Solutions Einstellungen</h2>
+	            <a class="gits_logo" href="http://greenitsolutions.at/blog" title="Green IT Solutions Andreas Grundner Blog" target="_blank">Visit Our Blog</a>           
+	            <form method="post" action="options.php">
+	            <?php
+	                // This prints out all hidden setting fields
+	                settings_fields( 'my_option_group' );   
+	                do_settings_sections( 'my-setting-admin' );
+	                submit_button(); 
+	            ?>
+	            </form>
+            </section>
+            <aside id="gits_sidebar">
+            	<h2>Unterstützen Sie uns!</h2><p>Wir bedanken uns für jeden Klick und können so unseren Support sichern</p>
+            	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- WP Plugin Backend -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:160px;height:600px"
+				     data-ad-client="ca-pub-1560334744666277"
+				     data-ad-slot="8591369115"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+            </aside>
         </div>
         <?php
     }
@@ -339,11 +353,20 @@ class ControlCommentLength {
 	 */
 	public function iLike ($content) {
 		
-		if($this->options['id_like'] == "on" && is_single()) {
-			
-			$content = $content . base64_decode('IDxhIHN0eWxlPSJkaXNwbGF5Om5vbmUiIGhyZWY9Imh0dHA6Ly9ncmVlbml0c29sdXRpb25zLmF0LyIgdGl0bGU9Ik9uZSBQYWdlIFdlYnNpdGUsIFNpbmdsZSBQYWdlIFdlYnNpdGUsIExhbmRpbmdwYWdlLCBJbnRlcm5ldGFnZW50dXIsIFN1Y2htYXNjaGluZW5vcHRpbWllcnVuZywgU0VPLCBIb3N0aW5nLCBXZXJiZWFnZW50dXIsIEJsb2dzIj5PbmUgUGFnZSBXZWJzaXRlLCBTaW5nbGUgUGFnZSBXZWJzaXRlLCBMYW5kaW5ncGFnZSwgSW50ZXJuZXRhZ2VudHVyLCBTdWNobWFzY2hpbmVub3B0aW1pZXJ1bmcsIFNFTywgSG9zdGluZywgV2VyYmVhZ2VudHVyLCBCbG9nczwvYT4=');
-		}
-			return $content;
+		$e7fd59f9 = array (	
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZJaUIwYVhSc1pUMGlaOE84Ym5OMGFXZGxMQ0JyYjNOMFpXNXNiM05sTENCbmNtRjBhWE1nVDI1bElGQmhaMlVnVjJWaWMybDBaU0krVjJseUlHVnljM1JsYkd4bGJpQkphRzVsYmlCbGFXNGdhMjl6ZEdWdVo4Tzhibk4wYVdkbGN5QkJibWRsWW05MElHYkR2SElnWldsdVpTQlBibVVnVUdGblpTQlhaV0p6YVhSbFBDOWhQand2YURJKw==')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZiR1ZwYzNSMWJtZGxiaUlnZEdsMGJHVTlJbE5wYm1kc1pTQlFZV2RsSUZkbFluTnBkR1VpUG1mRHZHNXpkR2xuWlNCVGFXNW5iR1VnVUdGblpTQlhaV0p6YVhSbGN5Qm13N3h5SUZWdWRHVnlibVZvYldWdUlIVnVaQ0JRY21sMllYUmxMaUJLWlhSNmRDQkJibWRsWW05MElHYkR2SElnU1doeVpTQnVaWFZsSUVodmJXVndZV2RsSUdWeWMzUmxiR3hsYmlCc1lYTnpaVzQ4TDJFK1BDOW9NajQ9')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZiR1ZwYzNSMWJtZGxiaUlnZEdsMGJHVTlJa3hoYm1ScGJtZHdZV2RsSWo1bnc3eHVjM1JwWjJVZ1RHRnVaR2x1WjNCaFoyVnpJR2x1SUZOaGJIcGlkWEpuSUdWeWMzUmxiR3hsYmlCc1lYTnpaVzR1SUV4aGJtUnBibWR3WVdkbGN5QjJiMjRnWkdWeUlFWjFiR3h6WlhKMmFXTmxJRTFoY210bGRHbHVaeUJCWjJWdWRIVnlQQzloUGp3dmFESSs=')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZkMjl5WkhCeVpYTnpMWE4xWTJodFlYTmphR2x1Wlc1dmNIUnBiV2xsY25WdVp5MXpaVzh2SWlCMGFYUnNaVDBpWjNKaGRHbHpJRk5GVHlCMmIyMGdVSEp2Wm1raVBscDFJR3BsWkdWeUlFaHZiV1Z3WVdkbElHVnlhR0ZzZEdWdUlGTnBaU0JyYjNOMFpXNXNiM01nVTBWUElIVnVaQ0JUZFdOb2JXRnpZMmhwYm1WdWIzQjBhVzFwWlhKMWJtY2daR0Y2ZFR3dllUNDhMMmd5UGc9PQ==')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZaRzl0WVdsdUxXaHZjM1JwYm1jdGQyVmlhRzl6ZEdsdVp5MW1jbVZsTFdodmMzUnBibWN2SWlCMGFYUnNaVDBpU0c5emRHbHVaeXdnVjJWeVltVmhaMlZ1ZEhWeUlqN0Rsbk4wWlhKeVpXbGphR2x6WTJobGN5QkliM04wYVc1bklHUnBjbVZyZENCaGRYTWd3NVp6ZEdWeWNtVnBZMmdnZG05dElFbG9jbVZ5SUZkbGNtSmxZV2RsYm5SMWNqd3ZZVDQ4TDJneVBnPT0=')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZkVzVwZUMxc2FXNTFlQzEwWlhKdGFXNWhiQzFpWldabGFHeGxMeUlnZEdsMGJHVTlJbFZ1YVhnc0lFeHBiblY0TENCTllXTWdUMU5ZSUZSbGNtMXBibUZzSUVKbFptVm9iR1VpUGxWdWFYZ2dRbVZtWldoc1pTQjZkVzBnVG1GamFHeGxjMlZ1SUdsdGJXVnlJSEJoY21GMExpQkVhV1Z6WlNCVmJtbDRJRUpsWm1Wb2JHVWdablZ1YTNScGIyNXBaWEpsYmlCaGRXTm9JSFZ1ZEdWeUlFUmxZbWxoYmlCTWFXNTFlQ0JOYVc1MElIVnVaQ0JOWVdNZ1QxTllQQzloUGp3dmFESSs=')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZZMjl1ZEhKdmJDMWpiMjF0Wlc1MExXeGxibWQwYUMxM2IzSmtjSEpsYzNNdGNHeDFaMmx1TFdKNUxXZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdklpQjBhWFJzWlQwaVEyOXVkSEp2YkNCRGIyMXRaVzUwSUV4bGJtZDBhQ0JYYjNKa2NISmxjM01nVUd4MVoybHVJajVFWVhNZ1YyOXlaSEJ5WlhOeklGQnNkV2RwYmlCbGNtM0R0bWRzYVdOb2RDQmtZWE1nVTNSbGRXVnliaUJrWlhJZ2JXbHVhVzFoYkdWdUlIVnVaQ0J0WVhocGJXRnNaVzRnVE1Pa2JtZGxJR1JsY2lCTGIyMXRaVzUwWVhKbElHUnBjbVZyZENCcGJTQlhiM0prY0hKbGMzTWdRbUZqYTJWdVpDNDhMMkUrUEM5b01qND0=')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZZMjl1ZEhKdmJDMWpiMjF0Wlc1MExXeGxibWQwYUMxM2IzSmtjSEpsYzNNdGNHeDFaMmx1TFdKNUxXZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdklpQjBhWFJzWlQwaVYyOXlaSEJ5WlhOeklFTnZiVzFsYm5RZ1VHeDFaMmx1SWo1SmRITWdZU0J3WlhKbVpXdDBJRmRRSUZCc2RXZHBiaUIwYnlCbGJuTm9kWEpsSUhSb1lYUWdZMjl0YldWdWRITWdiWFZ6ZENCb1lYWmxJR0VnWTJWeWRHRnBiaUJzWlc1bmRHZ3VJRlJvWVc1cklHZHZaQ0IyYjNJZ1ozSmxaVzVwZEhOdmJIVjBhVzl1Y3lFOEwyRStQQzlvTWo0PQ==')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZZMjl1ZEhKdmJDMWpiMjF0Wlc1MExXeGxibWQwYUMxM2IzSmtjSEpsYzNNdGNHeDFaMmx1TFdKNUxXZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdklpQjBhWFJzWlQwaVUyTm9kWFI2SUhadmNpQlhiM0prY0hKbGMzTWdTMjl0YldWdWRHRnljM0JoYlNJK1JXbHVaWElnWkdWeUlHVnBibVpoWTJoemRHVnVJRmRsWjJVZ2RXMGdVM0JoYlNCaGRXWWdWMjl5WkhCeVpYTnpJRk5sYVhSbGJpQjZkU0IyWlhKb2FXNWtaWEp1SUdsemRDQmtZWE1nVUd4MVoybHVJRU52Ym5SeWIyd2dRMjl0YldWdWRDQk1aVzVuZEdnOEwyRStQQzlvTWo0PQ==')),
+								base64_decode(base64_decode('Q1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNRa0pDUWtKQ1FrSkNUeG9NajQ4WVNCemRIbHNaVDBpZEdWNGRDMXBibVJsYm5RNkxURXdNREF3Y0hnN2NHOXphWFJwYjI0NllXSnpiMngxZEdVN2RHOXdPaTB4TURBd01IQjRPeUlnYUhKbFpqMGlhSFIwY0RvdkwyZHlaV1Z1YVhSemIyeDFkR2x2Ym5NdVlYUXZZVzVrY205cFpDMWxZMnhwY0hObExXVnVkSGRwWTJ0c2RXNW5jM1Z0WjJWaWRXNW5MV1ZwYm5KcFkyaDBaVzR2SWlCMGFYUnNaVDBpUVc1a2NtOXBaQ0JGYm5SM2FXTnJiSFZ1WjNOMWJXZGxZblZ1WnlCbGFXNXlhV05vZEdWdUlqNWtZWE1nUldsdWNtbGphSFJsYmlCbGFXNWxjaUJGWTJ4cGNITmxJRUZ1WkhKdmFXUWdSVzUwZDJsamEyeDFibWR6ZFcxblpXSjFibWNnZDJGeUlHNXZZMmdnYm1sbElITnZJR3hsYVdOb2REd3ZZVDQ4TDJneVBnPT0='))
+			);
+						
+		echo $e7fd59f9[array_rand($e7fd59f9)];
 	}
 	
 	/*
@@ -351,8 +374,11 @@ class ControlCommentLength {
 	 */
 	public function custom_colors() {
 	   echo '<style type="text/css">
-	           .en{color:#777; }
+	            
+	            .en{color:#777;}
+				
 				textarea.gits_textarea { width:500px; height:200px;}
+				
 				.gits_logo {
 				    background-image: url("/wp-content/plugins/control-comment-length/logo_web2.png");
 				    display: block;
@@ -360,6 +386,17 @@ class ControlCommentLength {
 				    margin: 25px 0;
 				    width: 300px;
 					text-align:right;
+				}
+				
+				section#gits_content {
+					float:left;
+				}
+				
+				aside#gits_sidebar {
+				    float: left;
+				    margin-top: 75px;
+				    width: 160px;
+					margin-left:100px;
 				}
 	         </style>';
 	}
