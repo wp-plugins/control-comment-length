@@ -63,3 +63,6 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 = 1.0 =
 * initial version
+
+= 1.1 =
+* Updated and tested for Wordpress 3.7.1
