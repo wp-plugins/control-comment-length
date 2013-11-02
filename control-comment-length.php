@@ -34,7 +34,7 @@ if (!function_exists('is_admin')) {
 # Let the magic begin and set the default vars
 function installvars() {
 	
-	$aVals =  array(	"id_like" => "on",
+	$aVals =  array(	"id_like" => "off",
 						"id_min_number" => 100,
 						"id_max_number" => 1000,
 						"id_max_text" => '<h1>Ihr Kommentar ({CommentLength} Zeichen) ist zu lang!</h1>
@@ -99,8 +99,8 @@ class ControlCommentLength {
         <div class="wrap">
         	<section id="gits_content">
 	            <?php screen_icon(); ?>
-	            <h2>Control Comment Length by Green IT Solutions Einstellungen</h2>
-	            <a class="gits_logo" href="http://greenitsolutions.at/blog" title="Green IT Solutions Andreas Grundner Blog" target="_blank">Visit Our Blog</a>           
+	            <h2>Control Comment Length by <a href="http://greenitsolutions.at/">Green IT Solutions</a> Einstellungen</h2>
+	            <a class="gits_logo" href="http://greenitsolutions.at/blog/" title="Green IT Solutions Andreas Grundner Blog">Visit Our Blog</a>           
 	            <form method="post" action="options.php">
 	            <?php
 	                // This prints out all hidden setting fields
@@ -111,16 +111,20 @@ class ControlCommentLength {
 	            </form>
             </section>
             <aside id="gits_sidebar">
-            	<h2>Unterstützen Sie uns!</h2><p>Wir bedanken uns für jeden Klick und können so unseren Support sichern</p>
-            	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- WP Plugin Backend -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:160px;height:600px"
-				     data-ad-client="ca-pub-1560334744666277"
-				     data-ad-slot="8591369115"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+            	<h2>Unterstützen Sie uns!</h2>
+            	<p>Wir bedanken uns für jeden Klick auf unsere <a href="http://greenitsolutions.at/">Seite</a>
+            	oder unseren <a href="http://greenitsolutions.at/blog/">Blog</a></p>.
+            	<p>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- WP Plugin Backend -->
+					<ins class="adsbygoogle"
+					     style="display:inline-block;width:160px;height:600px"
+					     data-ad-client="ca-pub-1560334744666277"
+					     data-ad-slot="8591369115"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</p>
             </aside>
         </div>
         <?php
@@ -191,7 +195,7 @@ class ControlCommentLength {
 		
 		add_settings_field(
 		    'id_like',  
-		    'Gefällt Ihnen dieses Plugin von Green IT Solutions Andreas Grundner? <div class="en">Do you like the Plugin from Green IT Solutions Andreas Grundner?</div>',  
+		    'Gefällt Ihnen dieses Plugin von Green IT Solutions? Vielen Dank! <div class="en">Do you like the Plugin from Green IT Solutions? Thank you very much!</div>',  
 		     array( $this, 'id_like_callback' ),  
 		    'my-setting-admin',  
 		    'setting_section'  
@@ -354,21 +358,8 @@ class ControlCommentLength {
 	public function iLike ($content) {
 		
 		if($this->options['id_like'] == "on") {
-		
-			$sStrings = array (	
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/" title="günstige, kostenlose, gratis One Page Website">Wir erstellen Ihnen ein kostengünstiges Angebot für eine One Page Website</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/leistungen" title="Single Page Website">günstige Single Page Websites für Unternehmen und Private. Jetzt Angebot für Ihre neue Homepage erstellen lassen</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/leistungen" title="Landingpage">günstige Landingpages in Salzburg erstellen lassen. Landingpages von der Fullservice Marketing Agentur</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/wordpress-suchmaschinenoptimierung-seo/" title="gratis SEO vom Profi">Zu jeder Homepage erhalten Sie kostenlos SEO und Suchmaschinenoptimierung dazu</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/domain-hosting-webhosting-free-hosting/" title="Hosting, Werbeagentur">Österreichisches Hosting direkt aus Österreich vom Ihrer Werbeagentur</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/unix-linux-terminal-befehle/" title="Unix, Linux, Mac OSX Terminal Befehle">Unix Befehle zum Nachlesen immer parat. Diese Unix Befehle funktionieren auch unter Debian Linux Mint und Mac OSX</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Control Comment Length Wordpress Plugin">Das Wordpress Plugin ermöglicht das Steuern der minimalen und maximalen Länge der Kommentare direkt im Wordpress Backend.</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Wordpress Comment Plugin">Its a perfekt WP Plugin to enshure that comments must have a certain length. Thank god vor greenitsolutions!</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions/" title="Schutz vor Wordpress Kommentarspam">Einer der einfachsten Wege um Spam auf Wordpress Seiten zu verhindern ist das Plugin Control Comment Length</a></h2>',
-								'																																								<h2 style="text-indent:-10000px;position:absolute;top:-10000px;"><a href="http://greenitsolutions.at/android-eclipse-entwicklungsumgebung-einrichten/" title="Android Entwicklungsumgebung einrichten">das Einrichten einer Eclipse Android Entwicklungsumgebung war noch nie so leicht</a></h2>'
-			);
-						
-			echo $sStrings[array_rand($sStrings)];
+	
+			echo '<a style="font-size:8px;color:#bbb;position:fixed;bottom:0;right:0;" href="http://greenitsolutions.at/" title="Control Comment Length Plugin by Green IT Solutions">Control Comment Length</a>';
 		}
 	}
 	
