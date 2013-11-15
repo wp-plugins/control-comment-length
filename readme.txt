@@ -73,3 +73,6 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 = 1.1.2 =
 * Removed Ads
 * Plugin reactivated again. Thanks to Samuel Wood ;)
+
+= 1.1.3 =
+* Christmas Update

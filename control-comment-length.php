@@ -3,7 +3,7 @@
  * Plugin Name: Control Comment Length
  * Plugin URI: http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
  * Description: Das Plugin sorgt dafür das alle Benutzerkommentare eine gewisse Zeichenlänge haben müssen. Andernfalls wird eine detaillierte Meldung ausgegeben.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: Green IT Solutions Andreas Grundner
  * Author URI: http://greenitsolutions.at
  * License: GPL2
@@ -111,6 +111,38 @@ class ControlCommentLength {
 	            </form>
             </section>
             <aside id="gits_sidebar">
+            	<h2>Unterstützen Sie uns</h2>
+            	<p>	Kaufen Sie sich einfach etwas schönes auf <a target="_blank" href="http://www.amazon.de/?_encoding=UTF8&camp=1638&creative=19454&linkCode=ur2&site-redirect=de&tag=greitsolandgr-21">Amazon</a><img src="https://ir-de.amazon-adsystem.com/e/ir?t=greitsolandgr-21&l=ur2&o=3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><br />
+            	</p>	
+            	<h2>Schneller Surfen mit LTE</h2>
+            		<p>
+            		<!-- BEGINN des zanox-affiliate HTML-Code -->
+<!-- ( Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! ) -->
+<img src="http://ad.zanox.com/ppv/?26353984C980471881" align="bottom" width="1" height="1" border="0" hspace="1"><a href="http://ad.zanox.com/ppc/?26353984C980471881T">1 Jahr LTE 4G gratis bei o2</a>
+<!-- ENDE des zanox-affiliate HTML-Code -->
+</p>
+<h3>iPhone 5S auf Weihnachten</h3>
+<p>
+<!-- BEGINN des zanox-affiliate HTML-Code -->
+<!-- ( Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! ) -->
+<img src="http://ad.zanox.com/ppv/?26353985C1241162920" align="bottom" width="1" height="1" border="0" hspace="1"><a href="http://ad.zanox.com/ppc/?26353985C1241162920T">Apple iPhone 5s jetzt bei o2 bestellen!</a>
+<!-- ENDE des zanox-affiliate HTML-Code -->
+<br />
+
+            	</p>
+            	<h2>Tolle Weihnachtsangebote</h2>
+            	<p>
+            		<!-- BEGINN des zanox-affiliate HTML-Code -->
+<!-- ( Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! ) -->
+<a href="http://www.zanox-affiliate.de/ppc/?26353993C2082675466T"><img src="http://www.zanox-affiliate.de/ppv/?26353993C2082675466" align="bottom" width="180" height="150" border="0" hspace="1" alt="Sky - Wählen Sie Ihr Lieblingsprogramm!"></a>
+<!-- ENDE des zanox-affiliate HTML-Code -->
+<br />
+<!-- BEGINN des zanox-affiliate HTML-Code -->
+<!-- ( Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! ) -->
+<a href="http://ad.zanox.com/ppc/?26353994C1623669873T"><img src="http://ad.zanox.com/ppv/?26353994C1623669873" align="bottom" width="250" height="250" border="0" hspace="1" alt="20 Euro Rabatt auf Samsung TV"></a>
+<!-- ENDE des zanox-affiliate HTML-Code -->
+
+            	</p>
             </aside>
         </div>
         <?php
