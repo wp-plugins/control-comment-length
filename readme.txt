@@ -3,8 +3,8 @@ Contributors: a.grundner@greenitsolutions.at
 Donate link: http://greenitsolutions.at
 Tags: comments, spam, plugin, admin, posts, Post
 Requires at least: 3.0.0
-Tested up to: 3.7.1
-Stable tag: 3.7.1
+Tested up to: 3.8
+Stable tag: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,3 +76,7 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 = 1.1.3 =
 * Christmas Update
+
+= 1.1.4 =
+* Update for WP 3.8
+* new Screenshots
