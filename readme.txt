@@ -22,7 +22,7 @@ Der Hinweis auf einen zu kurzen oder zu langen Kommentar kann ebenfalls angepass
 * Die Zeichenlänge für alle User die Kommentare moderieren können kann gesteuert werden
 * Deutsches and Englisches backend interface
 
-Hilfe und Support erhalten Sie auf http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
+Hilfe und Support erhalten Sie auf http://greenitsolutions.at/control-comment-length-wordpress-plugin/
 
 Viel Erfolg wünscht Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
@@ -38,7 +38,7 @@ You can also adjust the reference of a comment which is too long or too short.
 * The character length for all users who are able to moderate the comments can be controlled.
 * German and English backend interface
 
-You can obtain help and support at http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
+You can obtain help and support at http://greenitsolutions.at/control-comment-length-wordpress-plugin/
 
 Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
