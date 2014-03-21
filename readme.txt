@@ -83,3 +83,6 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 = 1.1.5 =
 * Update for WP 3.8.1 (http://greenitsolutions.at)
+
+= 1.1.6 =
+* Improvements, better Backend
