@@ -3,7 +3,7 @@
  * Plugin Name: Control Comment Length
  * Plugin URI: http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
  * Description: Das Plugin sorgt dafür das alle Benutzerkommentare eine gewisse Zeichenlänge haben müssen. Andernfalls wird eine detaillierte Meldung ausgegeben.
- * Version: 1.1.6
+ * Version: 1.1.7
  * Author: Green IT Solutions Andreas Grundner
  * Author URI: http://greenitsolutions.at
  * License: GPL2
@@ -377,13 +377,14 @@ class ControlCommentLength {
 				
 				section#gits_content {
 					float:left;
+					width:75%;
 				}
 				
 				aside#gits_sidebar {
 				    float: left;
 				    margin-top: 75px;
-				    width: 160px;
-					margin-left:100px;
+				    width: 20%;
+					margin-left:5%;
 				}
 	         </style>';
 	}

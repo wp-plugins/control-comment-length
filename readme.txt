@@ -61,8 +61,26 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 == Changelog ==
 
-= 1.0 =
-* initial version
+= 1.1.7 =
+* Update for WP 3.9
+* Changelog http://greenitsolutions.at/control-comment-length-wordpress-plugin/
+
+= 1.1.6 =
+* Improvements, better Backend
+
+= 1.1.5 =
+* Update for WP 3.8.1 (http://greenitsolutions.at)
+
+= 1.1.4 =
+* Update for WP 3.8
+* new Screenshots
+
+= 1.1.3 =
+* Christmas Update
+
+= 1.1.2 =
+* Removed Ads
+* Plugin reactivated again. Thanks to Samuel Wood ;)
 
 = 1.1 =
 * Updated and tested for Wordpress 3.7.1
@@ -70,19 +88,5 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 = 1.1.1 =
 * Little nightly bugfix
 
-= 1.1.2 =
-* Removed Ads
-* Plugin reactivated again. Thanks to Samuel Wood ;)
-
-= 1.1.3 =
-* Christmas Update
-
-= 1.1.4 =
-* Update for WP 3.8
-* new Screenshots
-
-= 1.1.5 =
-* Update for WP 3.8.1 (http://greenitsolutions.at)
-
-= 1.1.6 =
-* Improvements, better Backend
+= 1.0 =
+* initial version
