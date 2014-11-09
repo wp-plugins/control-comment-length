@@ -3,7 +3,7 @@
  * Plugin Name: Control Comment Length
  * Plugin URI: http://greenitsolutions.at/control-comment-length-wordpress-plugin-by-greenitsolutions-at/
  * Description: Das Plugin sorgt dafür das alle Benutzerkommentare eine gewisse Zeichenlänge haben müssen. Andernfalls wird eine detaillierte Meldung ausgegeben.
- * Version: 1.1.8
+ * Version: 1.2
  * Author: Green IT Solutions Andreas Grundner
  * Author URI: http://greenitsolutions.at
  * License: GPL2
@@ -99,7 +99,7 @@ class ControlCommentLength {
         <div class="wrap">
         	<section id="gits_content">
 	            <?php screen_icon(); ?>
-	            <h2>Control Comment Length by <a href="http://greenitsolutions.at/">Green IT Solutions</a> Einstellungen</h2>
+	            <h2>Control Comment Length by <a href="http://greenitsolutions.at/">Green IT Solutions</a></h2>
 	            <a class="gits_logo" href="http://greenitsolutions.at/" title="SEO Blog">Visit Our Blog</a>           
 	            <form method="post" action="options.php">
 	            <?php
@@ -111,9 +111,9 @@ class ControlCommentLength {
 	            </form>
             </section>
             <aside id="gits_sidebar">
-            	<h2>Erinnerung</h2>
-            	<h3>Wollten Sie nicht heute etwas auf <a target="_blank" href="http://www.amazon.de/?_encoding=UTF8&camp=1638&creative=19454&linkCode=ur2&site-redirect=de&tag=greitsolandgr-21">Amazon</a><img src="https://ir-de.amazon-adsystem.com/e/ir?t=greitsolandgr-21&l=ur2&o=3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><br />
-            		bestellen?
+            	<h2>Support us!</h2>
+            	<h3>Please support us and just order something on Amazon with <a target="_blank" href="http://www.amazon.de/?_encoding=UTF8&camp=1638&creative=19454&linkCode=ur2&site-redirect=de&tag=greitsolandgr-21">this link</a><img src="https://ir-de.amazon-adsystem.com/e/ir?t=greitsolandgr-21&l=ur2&o=3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><br />
+            		Thank you!
             	</h3>
 
             </aside>
@@ -278,8 +278,7 @@ class ControlCommentLength {
 		if($sWhichText == "shortText") {
 			$sCommentTooShortText = str_replace("{CommentLength}", $sCommentLength, $this->options['id_min_text']);
 			$sCommentTooShortText = str_replace("{minimalCommentLength}", $minimalCommentLength, $sCommentTooShortText);
-			echo $sCommentTooShortText;
-			
+			return $sCommentTooShortText;
 		}
 		
 		if($sWhichText == "longText") {
@@ -305,10 +304,10 @@ class ControlCommentLength {
 		
 
 		if ($sCommentLength < $minimalCommentLength)
-			wp_die($this->get_text($sCommentLength, $minimalCommentLength, $maximalCommentLength, "shortText"));
+			wp_die($this->get_text($sCommentLength, $minimalCommentLength, $maximalCommentLength, "shortText"), "Comment too short");
 
 		if ($sCommentLength > $maximalCommentLength)
-			wp_die($this->get_text($sCommentLength, $minimalCommentLength, $maximalCommentLength, "longText"));
+			wp_die($this->get_text($sCommentLength, $minimalCommentLength, $maximalCommentLength, "longText"), "Comment too long");
 		
 		return $commentdata;
 	}
@@ -352,7 +351,7 @@ class ControlCommentLength {
 		
 		if($this->options['id_like'] == "on") {
 	
-			echo '<a style="font-size:8px;color:rgba(255,255,255,0.2);position:fixed;bottom:0;right:0;" href="http://greenitsolutions.at/" title="Galaxy S4, Galaxy S5 mit Outlook synchronisieren">Samsung Galaxy S4 sync</a>';
+			echo '<a style="font-size:8px;color:rgba(255,255,255,0.2);position:fixed;bottom:0;right:0;z-index:99999999;" href="http://greenitsolutions.at/" title="Samsung Galaxy S4, Samsung Galaxy S5 mit Outlook synchronisieren, Android update">Samsung Galaxy S4, Galaxy S5 Outlook synchronisieren, Android update, Eclipse</a>';
 		}
 	}
 	

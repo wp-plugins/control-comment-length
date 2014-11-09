@@ -61,6 +61,10 @@ Have fun wishes Green IT Solutions Andreas Grundner http://greenitsolutions.at
 
 == Changelog ==
 
+= 1.2 =
+* WP 4.0 ready
+* Language bugfix
+
 = 1.1.8 =
 * Improvements
 * Changelog http://greenitsolutions.at/control-comment-length-wordpress-plugin/
