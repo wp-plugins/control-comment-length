@@ -7,7 +7,7 @@
  * Author: Green IT Solutions Andreas Grundner
  * Author URI: http://greenitsolutions.at
  * License: GPL2
- * Copyright 2013  Green IT Solutions Andreas Grundner  (email : a.grundner@greenitsolutions.at)
+ * Copyright 2014  Green IT Solutions Andreas Grundner  (email : a.grundner@greenitsolutions.at)
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License, version 2, as
